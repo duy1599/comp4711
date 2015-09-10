@@ -33,6 +33,8 @@ and open the template in the editor.
         $first->add_grade(65);
         $first->add_grade(75);
         $first->add_grade(55);
+        
+        //Add student to specificied key
         $students['j123'] = $first;
         
         /*
@@ -47,6 +49,8 @@ and open the template in the editor.
         $second->add_grade(95);
         $second->add_grade(80);
         $second->add_grade(50);
+        
+        //Add student to specificied key
         $students['a456'] = $second;
         
         /*
@@ -58,11 +62,14 @@ and open the template in the editor.
         $third->add_email('work', 'duy_le@bcit.ca');
         $third->add_grade(99);
         $third->add_grade(96);
+        
+        //Add student to specificied key
         $students['d789'] = $third;
         
         // Sorts the objects in the array by key
         ksort($students);
         
+        // Display students
         foreach ($students as $student)
             echo $student->toString();
         
